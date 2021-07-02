@@ -1,0 +1,103 @@
+$color-white: #f7f7f7;
+$color-grey-light: #575756;
+$color-grey-dark: #3c3c3b;
+$color-black: #2e2d2c;
+$color-blue-dark: #4a79bc;
+$color-blue-light: #87c5ec;
+$color-orange: #f7b74f;
+$border-radius: 5px;
+
+@font-face {
+  font-family: 'reg';
+  src: url('/css/fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'med';
+  src: url('/css/fonts/Montserrat-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'bold';
+  src: url('/css/fonts/Montserrat-Bold.ttf');
+}
+
+$bp-huge: 84.375em; // 1350px
+$bp-largest: 76.0625em; // 1200px
+$bp-large2: 65.625em; // 1050px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 56.25em; // 900px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 10px/16px=62.5%
+}
+
+body {
+  font-family: 'reg', sans-serif;
+  color: $color-black;
+}
+
+#section-1 {
+  background-image: url(/img/home_desktop.jpg);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+.container-nav {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 130rem;
+  min-height: fit-content;
+  position: relative;
+
+  .hidden {
+    display: none;
+  }
+}
+
+.container-acc {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 130rem;
+  min-height: fit-content;
+  @media only screen and (max-width: $bp-huge) {
+    padding: 0 2rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 0;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 130rem;
+  min-height: fit-content;
+  @media only screen and (max-width: $bp-huge) {
+    padding: 0 2rem;
+  }
+}
+
+.hero {
+  height: calc(100vh - 8rem);
+  min-height: 80rem;
+}
+.hidden {
+  display: none;
+}

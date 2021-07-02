@@ -1,0 +1,29 @@
+h1 {
+  color: #fff;
+  font-size: 8rem;
+  font-family: med;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 5.5rem;
+  }
+}
+
+h2 {
+  color: $color-blue-dark;
+  font-size: 2.5rem;
+  font-family: bold;
+}
+
+h3 {
+  color: $color-black;
+  font-size: 1.6rem;
+}
+
+h4 {
+  color: $color-black;
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.6rem;
+}

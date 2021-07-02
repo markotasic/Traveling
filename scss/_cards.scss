@@ -1,0 +1,142 @@
+#section-3 {
+  background-color: $color-blue-light;
+  padding: 7rem 0 10rem 0;
+  min-height: fit-content;
+}
+
+.cards {
+  display: grid;
+  grid-gap: 3rem;
+
+  &-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &-container {
+    overflow: hidden;
+    position: relative;
+  }
+
+  &-title {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 7rem;
+    font-size: 3.5rem;
+  }
+
+  &-card-title {
+    font-family: bold;
+    font-size: 1.6rem;
+    color: $color-grey-dark;
+    margin-top: 0.5rem;
+  }
+
+  &-card-text {
+    color: $color-grey-dark;
+    font-size: 1.4rem;
+    margin-top: -2rem;
+  }
+}
+
+.icon {
+  height: 5rem;
+  width: auto;
+}
+
+.cards-left-side {
+  position: relative;
+  z-index: 1;
+  width: 55%;
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 100%;
+  }
+}
+
+.card {
+  border-radius: 0.5rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  width: 70rem;
+  align-items: center;
+  margin-top: 1rem;
+  &.book-show {
+    .btn--blue {
+      display: block;
+    }
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    .btn--blue {
+      display: block;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 1rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+    width: 100%;
+    max-width: 50rem;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    justify-self: center;
+  }
+
+  .dots {
+    border-left: 6px rgb(216, 216, 216) dotted;
+    padding: 5rem 0;
+
+    @media only screen and (max-width: $bp-medium) {
+      transform: rotate(90deg);
+      height: 50rem;
+      position: absolute;
+      margin-top: 4rem;
+    }
+  }
+
+  .price {
+    font-family: bold;
+    color: $color-orange;
+    font-size: 2.5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-top: 5rem;
+    }
+  }
+
+  &:hover {
+    transform: translateX(calc(100% * 0.1)) scale(1.2);
+
+    @media only screen and (max-width: $bp-medium) {
+      transform: none;
+    }
+  }
+}
+
+.cards-right-side {
+  right: 10rem;
+  flex-wrap: wrap;
+}
+
+._3ppl {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  height: 40rem;
+  align-self: flex-end;
+  width: auto;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
+}
+
+.cards-container {
+  display: flex;
+}

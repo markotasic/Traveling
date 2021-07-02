@@ -1,0 +1,80 @@
+.contact-us {
+  height: fit-content;
+  background-color: $color-white;
+  padding: 7rem 0;
+}
+
+.contact {
+  display: grid;
+  justify-items: center;
+  &__title {
+    color: black;
+    font-size: 3.5rem;
+    margin-bottom: 7rem;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-ppl {
+      width: 55%;
+      margin-left: -3rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media only screen and (max-width: $bp-largest) {
+        display: none;
+      }
+
+      &--man,
+      &--women {
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    &-form {
+      width: 40%;
+
+      @media only screen and (max-width: $bp-largest) {
+        width: 100%;
+      }
+
+      &--label {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+        color: $color-black;
+        font-family: bold;
+      }
+
+      &--input {
+        padding: 2rem;
+        font-size: 1.4rem;
+        color: $color-grey-light;
+        margin-top: 0.5rem;
+        margin-bottom: 2.5rem;
+        font-family: reg;
+        border: 0.1rem solid $color-black;
+        border-radius: $border-radius;
+        width: 100%;
+        background-color: $color-white;
+      }
+
+      &--checkbox-text {
+        font-family: reg;
+        font-size: 1.4rem;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.contact-btn {
+  margin-top: 4rem;
+}

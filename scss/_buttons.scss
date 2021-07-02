@@ -1,0 +1,81 @@
+.btn {
+  padding: 1.5rem 3rem;
+  border: none;
+  border-radius: $border-radius;
+  border: 2px solid #fff;
+  font-family: reg;
+  color: $color-black;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--primary-light {
+    background-color: #fff;
+
+    &:hover {
+      background-color: darken($color: #fff, $amount: 5);
+      border-color: darken($color: #fff, $amount: 5);
+    }
+  }
+
+  &--primary-dark {
+    background-color: $color-black;
+    border: 2px solid $color-black;
+    color: #fff;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-bottom: 5rem;
+    }
+
+    &:hover {
+      background-color: lighten($color: $color-black, $amount: 5);
+      border-color: lighten($color: $color-black, $amount: 5);
+    }
+  }
+
+  &--sec {
+    background-color: transparent;
+    color: #fff;
+    margin-left: 2rem;
+
+    .play {
+      margin-right: 0.5rem;
+    }
+
+    &:hover {
+      background-color: #fff;
+      color: $color-black;
+      .play {
+        filter: brightness(0.2);
+      }
+    }
+  }
+
+  &--blue {
+    background-color: $color-blue-light;
+    color: #fff;
+    padding: 0.5rem 3rem;
+    font-size: 1.5rem;
+    border: 2px solid $color-blue-light;
+    margin-top: 0.8rem;
+
+    &:hover {
+      background-color: $color-blue-dark;
+      border-color: $color-blue-dark;
+    }
+  }
+
+  &--blue-inv {
+    background-color: transparent;
+    color: $color-blue-light;
+    padding: 0.5rem 3rem;
+    font-size: 1.7rem;
+    border: none;
+    font-family: bold;
+
+    &:hover {
+      color: $color-blue-dark;
+    }
+  }
+}
