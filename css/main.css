@@ -419,6 +419,7 @@ p {
           border-radius: 5px;
   margin-top: 15rem;
   margin-left: -9rem;
+  border: 1px solid #2e2d2c;
 }
 
 .nav__languages .custom-select .select {
@@ -432,10 +433,12 @@ p {
 }
 
 .nav__languages .custom-select .select:after {
+  border-top: 1px solid #2e2d2c;
+  border-left: 1px solid #2e2d2c;
   content: '';
   position: absolute;
   right: 1.1rem;
-  top: -0.5rem;
+  top: -0.6rem;
   width: 1rem;
   height: 1rem;
   background-color: #f7f7f7;
@@ -570,6 +573,9 @@ p {
       -ms-flex-line-pack: center;
           align-content: center;
   width: 100%;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .header-menu .nav__item:not(:last-child) {
@@ -1081,6 +1087,9 @@ p {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 1rem;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .card.book-show .btn--blue {
